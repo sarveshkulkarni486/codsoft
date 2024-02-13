@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velvet Vista Lodge</title>
+    <link rel="icon" type="image/gif" href="./assets/images/logo.gif"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/styles/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/2dd5f1c1c7.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSGFpoOHR2l2Yh8vQGJb8Utgf7Uf+HJ7VTIIJLccfvT2xJ9d+EaNwJGh1pZLrQQ1sMJ" crossorigin="anonymous"></script>
+</head>
+<body>
+    <script src="/script.js"></script>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Hotels</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a href="#" class="nav-link" data-item="Home">Home <span class="sr-only">(Current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-item="About us">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#food-court" class="nav-link" data-item="Food-Court">Food-Court</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-item="Menu">Menu</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#" data-item="Breakfast">BreakFast</a>
+                        <a class="dropdown-item" href="#" data-item="Lunch">Lunch</a>
+                        <a class="dropdown-item" href="#" data-item="Dinner">Dinner</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-item="Contact us">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <button href="#" class="nav-link login" data-item="Login" style="border: none;">Login</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <script>
+        $(document).ready(function() {
+            $(".nav-link, .dropdown-item").on("click", function() {
+                $(".navbar-toggler").trigger("click");
+            });
+        });
+    </script>
+    <section class="home-page">
+    <div class="image-card">
+        <img src="assets/images/hotel.jpg" alt="Image" style="filter: blur(2px);">
+        <div class="image-text">
+            <h1>Enjoy Your</h1>
+            <h1 class="img-text1">Dream Vacation</h1>
+        </div>
+        <div class="image-para">
+            <h3>Book your room now to get exciting offers!</h3>
+            <h3>To Get Offers on Booking Use CODE 'HOTEL23'</h3>
+        </div>
+        <div class="card reveal">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card-content">
+                        <h3 class="card-title">Facilites</h3>
+                        <p class="more">See More</p>
+                    </div>
+                    <div class="card-icons">
+                        <i class="fa-solid fa-person-swimming" style="font-size: 24px; margin-left: 2rem; margin-bottom: 1rem;"></i>
+                        <i class="fa-solid fa-utensils" style="font-size: 24px; margin-left: 2rem; margin-bottom: 1rem;"></i>
+                        <i class="fa-solid fa-bed" style="font-size: 24px; margin-left: 2rem; margin-bottom: 1rem;"></i>
+                        <i class="fa-solid fa-shower" style="font-size: 24px; margin-left: 2rem; margin-bottom: 1rem;"></i>
+                    </div>
+                    <div class="vl"></div>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="card-title plan" style="font-size: 18px; padding-top: 2rem;">Plan Your Journey</h3>
+                    <form>
+                        <div class="input-container">
+                            <label for="dateInput">FROM: </label>
+                            <input type="date" id="dateInput" name="date"/>
+                        </div>
+                        <div class="input-container2">
+                            <label for="dateInput2">TO: </label>
+                            <input type="date" id="dateInput2" name="date"/>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section id="service">
+        <div class="container-fluid">
+            <h1 class="title">Our Services</h1>
+            <div class="row card-style">
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/trek.png" class="card-img-top" alt="..." style="width: 50%; height: auto; margin-top: 3rem; margin-left: 2rem;" />
+                        <div class="card-body">
+                            <h5 class="card-title" style="margin-left: 1rem;">Trekking</h5>
+                            <p class="card-text" style="margin-left: 1rem;">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                            <a href="#" class="link" style="margin-bottom: 0.5rem; margin-left: 1rem; text-decoration: none;">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/map.png" class="card-img-top" alt="..." style="width: 50%; height: auto; margin-top: 3rem; margin-left: 2rem;"/>
+                        <div class="card-body">
+                            <h5 class="card-title" style="margin-left: 1rem;">The Map</h5>
+                            <p class="card-text" style="margin-left: 1rem;">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                            <a href="#" class="link" style="margin-bottom: 0.5rem; margin-left: 1rem; text-decoration: none;">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/suitcase.png" class="card-img-top" alt="..." style="width: 50%; height: auto; margin-top: 3rem; margin-left: 2rem;"/>
+                        <div class="card-body">
+                            <h5 class="card-title" style="margin-left: 1rem;">Suitcase</h5>
+                            <p class="card-text" style="margin-left: 1rem;">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                            <a href="#" class="link" style="margin-bottom: 0.5rem; margin-left: 1rem; text-decoration: none;">Learn More</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row card-style" style="margin-top: 3rem;">
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/island.png" class="card-img-top" alt="..." style="width: 50%; height: auto; margin-top: 3rem; margin-left: 2rem;" />
+                            <div class="card-body">
+                                <h5 class="card-title" style="margin-left: 1rem;">Island Hopping</h5>
+                                <p class="card-text" style="margin-left: 1rem;">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                <a href="#" class="link" style="margin-bottom: 0.5rem; margin-left: 1rem; text-decoration: none;">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/world.png" class="card-img-top" alt="..." style="width: 50%; height: auto; margin-top: 3rem; margin-left: 2rem;" />
+                            <div class="card-body">
+                                <h5 class="card-title" style="margin-left: 1rem;">World Round</h5>
+                                <p class="card-text" style="margin-left: 1rem;">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                <a href="#" class="link" style="margin-bottom: 0.5rem; margin-left: 1rem; text-decoration: none;">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/plane.png" class="card-img-top" alt="..." style="width: 50%; height: auto; margin-top: 3rem; margin-left: 2rem;" />
+                            <div class="card-body">
+                                <h5 class="card-title" style="margin-left: 1rem;">Travel with Plane</h5>
+                                <p class="card-text" style="margin-left: 1rem;">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                <a href="#" class="link" style="margin-bottom: 0.5rem; margin-left: 1rem; text-decoration: none;">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="about">
+        <div class="container-fluid">
+            <div class="green-box">
+                <img class="img-fluid resort-img" src="assets/images/resort.jpg"/>
+            </div>
+            <div class="about-us">
+                <h1 class="h1">About Us</h1>
+                <p class="p">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+                    A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+            </div>
+        </div>
+    </section>
+    <section id="blog" style="margin-top: 10rem; margin-left: 5rem; margin-right: 5rem;">
+        <h1 class="title">Blog Post</h1>
+        <div class="container" style="margin-top: 5rem;">
+            <div class="row">
+                <div class="col-sm-5 col-md-6">
+                    <div class="card" style="width: 26rem;">
+                        <img src="assets/images/blog1 (1).jpg" class="card-img-top" />
+                        <div class="card-body">
+                            <img src="assets/images/circle.png" width="10%" height="10%" style="margin-top: 0rem; margin-bottom: 2rem;" />
+                            <h1 class="card-title">Trek Blog1</h1>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                            <a href="#" class="link" style="text-decoration: none;">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-5 col-md-6">
+                    <div class="card" style="width: 26rem;">
+                        <img src="assets/images/blog2.jpg" class="card-img-top" />
+                        <div class="card-body">
+                            <img src="assets/images/circle.png" width="10%" height="10%" style="margin-top: 0rem; margin-bottom: 2rem;" />
+                            <h1 class="card-title">Party Blog2</h1>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                            <a href="#" class="link" style="text-decoration: none;">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 3rem;">
+                <div class="col-sm-5 col-md-6">
+                    <div class="card" style="width: 26rem;">
+                        <img src="assets/images/blog3.jpg" class="card-img-top" />
+                        <div class="card-body">
+                            <img src="assets/images/circle.png" width="10%" height="10%" style="margin-top: 0rem; margin-bottom: 2rem;" />
+                            <h1 class="card-title">Pool & more Blog3</h1>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                            <a href="#" class="link" style="text-decoration: none;">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-5 col-md-6">
+                    <div class="card" style="width: 26rem;">
+                        <img src="assets/images/blog4.jpg" class="card-img-top" />
+                        <div class="card-body">
+                            <img src="assets/images/circle.png" width="10%" height="10%" style="margin-top: 0rem; margin-bottom: 2rem;" />
+                            <h1 class="card-title">Friends & Beaches Blog4</h1>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                            <a href="#" class="link" style="text-decoration: none;">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html> 
