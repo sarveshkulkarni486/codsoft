@@ -430,3 +430,18 @@ a:hover {
     text-align: start;
     
 }
+#footer-links .list-unstyled li{
+    display: inline;
+    margin-right: 120px;
+    margin-left: 100px;
+    text-decoration: none;
+    list-style: none;
+}
+#footer-links
+{
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+}
+footer{
+    margin-top: 2rem;
+}
